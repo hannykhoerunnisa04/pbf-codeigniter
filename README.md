@@ -34,6 +34,54 @@ Singkatnya, CodeIgniter adalah kerangka kerja lunak yang mencoba menyediakan ala
 1. Ketikkan perintah ini di terminal pc masing-masing.
  ```shell
    composer create-project codeigniter4/appstarter project-root
- ``` 
+ ```
+2. Ketikkan perintah di terminal untuk masuk ke dalam  direktori untuk mengerucut direktori project-root
+ ```shell
+cd C:\laragon\www\project-root
+```
+3. Upgrade
+
+```shell
+composer update
+```
+4. Upgrade untuk versi terbaru
+```shell
+php builds development
+```
+5. Kembalikan ke rilis stabil
+```shell
+php builds release
+```
+### Instalasi Manual
+1. Unduh [versi terbaru] (https://github.com/codeigniter4/framework/archive/v4.0.4.zip)
+2. Setelah terinstal ekstrak folder zip yang sudah di instal.
+### Struktur
+app, public, tests, writable, system
+
+### Server Pengembangan Lokal
+1. Ketikkan perintah di terminal untuk memakai server pengembangan lokal
+```shell
+php spark serve
+```
+2. Ini akan meluncurkan server dan sekarang Anda dapat melihat aplikasi Anda di browser Anda di (http://localhost:8080) .
+- Server pengembangan lokal dapat dikustomisasi dengan tiga opsi baris perintah:
+Anda dapat menggunakan --hostopsi CLI untuk menentukan host berbeda untuk menjalankan aplikasi di:
+```shell
+php spark serve --host example.dev
+```
+Secara default, server berjalan pada port 8080 tetapi Anda mungkin menjalankan lebih dari satu situs, atau sudah memiliki aplikasi lain yang menggunakan port tersebut. Anda dapat menggunakan --portopsi CLI untuk menentukan opsi lain:
+```shell
+php spark serve --port 8081
+```
+Anda juga dapat menentukan versi PHP tertentu yang akan digunakan, dengan --phpopsi CLI, dengan nilainya disetel ke jalur eksekusi PHP yang ingin Anda gunakan:
+```shell
+php spark serve --php /usr/bin/php7.6.5.4
+```
+## Membuat aplikasi sederhana
+### Static Pages
+
+
+
+
 
 
